@@ -1,30 +1,25 @@
-public class Product{
-    private String Name;
-    private int Price;
-    private byte Rating;  
+import java.util.ArrayList;
 
+class Product {
+    private String name;
+    private double price;
+    private int rating;
 
-public String getName(){
-    return Name;
-}
+    public Product(String name, double price, int rating) {
+        this.name = name;
+        this.price = price;
+        this.rating = rating;
+    }
 
-public int getPrice(){
-    return Price;
-}
+    public String getName() {
+        return name;
+    }
 
-public byte getRating(){
-    return Rating;
-}
+    public double getPrice() {
+        return price;
+    }
 
-public void setName(String Name){
-    this.Name = Name;
-}
-
-public void setPrice(int Price){
-    this.Price = Price;
-}
-
-public void setRating(byte Rating){
-    this.Rating = Rating;
-}
+    public int getRating() {
+        return rating;
+    }
 }
